@@ -1,0 +1,13 @@
+<table>
+	<th>Name</th>
+	<th>Age</th>
+	<th>Gender</th>
+	<% @students.each do|s| %>
+		<tr>
+			<td><%= s.name%></td>
+			<td><%= s.age%></td>
+			<td><%= s.gender%></td>
+		</tr>
+	<%end%>
+</table>
+<%= link_to "new", new_student_path %>

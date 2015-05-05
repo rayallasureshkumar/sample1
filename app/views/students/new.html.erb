@@ -1,0 +1,20 @@
+<%= form_for @student do|f| %>
+	<table>
+		<tr>
+			<td><%=f.label :name %></td>
+			<td><%=f.text_field :name %></td>
+		</tr>
+		<tr>
+			<td><%=f.label :age %></td>
+			<td><%=f.text_field :age %></td>
+		</tr>
+		<tr>
+			<td><%=f.label :gender %></td>
+			<td><%= f.radio_button :gender, 'Male', :checked => true %> Male
+	    	    <%= f.radio_button :gender, 'Female' %> Female</td>
+		</tr>
+		<tr>
+			<td><%=f.submit "submit"%><td>
+		</tr>
+	</table>
+<%end%>
